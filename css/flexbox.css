@@ -66,16 +66,16 @@
 }
 
 
-@media (min-width: 834px) {
+@media (min-width: 768px) {
 
     /* Cabecera */
     .cabecera__buscar__item {
         display: block;
     }
 
-    /* Menu */
+    /* Menu lateral*/
     .menu__container {
-        top: 0%;
+        left: 0%;
         width: 80px;
         height: auto;
         top: 80px;
@@ -86,6 +86,7 @@
         justify-content: flex-start;
         height: 100%;
         gap: 30px;
+        justify-content: flex-start;
     }
 
     .menu__lista li {
@@ -98,6 +99,11 @@
     .menu__itens {
         height: 60px;
     }
+
+    /* Sección superior */
+    .superior__seccion__container{
+        left: 80px;
+    }   
     
     /* Footer */
     .rodapie__container {
@@ -114,4 +120,59 @@
         width: 25%;
         gap: 5px;
     }
+}
+
+@media(min-width:1024px) {
+
+    /* Menu lateral */
+    .menu__container {
+        width: 240px;
+        overflow: scroll;
+    }
+
+    .menu__lista {
+        height: auto;
+        padding: 20px 17px 20px 15px;
+        gap: 30px;
+    }
+    
+    .menu__lista li {
+        height: auto;
+        padding: 0;
+    }
+
+    .menu__lista:nth-child(2),
+    .menu__lista:nth-child(3),
+    .menu__lista:nth-child(4) {
+        display: flex;
+    }
+
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .menu__itens {
+        height: auto;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .videojuegos {
+        order: 3;
+    }
+
+    .peliculas {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    /* Sección superior */
+    .superior__seccion__container {
+        left: 250px;
+    }
+
 }
