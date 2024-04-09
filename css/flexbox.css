@@ -6,10 +6,43 @@
     align-items: center;
     position: fixed;
     top: 0;
+    height: 80px;
+    padding: 0 0;
 }
 
 .cabecera__buscar__item {
     display: none;
+}
+
+/* Menu */
+
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 75px;
+    width: 100vw;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
+}
+
+.menu__lista li {
+    align-self: center;
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 
@@ -19,7 +52,7 @@
     align-items: center;
     white-space: nowrap;
     overflow: scroll;
-    ga: 15px;
+    gap: 15px;
 }
 
 
@@ -40,8 +73,45 @@
         display: block;
     }
 
+    /* Menu */
+    .menu__container {
+        top: 0%;
+        width: 80px;
+        height: auto;
+        top: 80px;
+    }
+
+    .menu__lista {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        height: 100%;
+        gap: 30px;
+    }
+
+    .menu__lista li {
+        align-self: center;
+        height: 80px;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .menu__itens {
+        height: 60px;
+    }
+    
     /* Footer */
-    .rodapie__container{
-        justify-content: space-between;
+    .rodapie__container {
+        flex-flow: row wrap;
+        padding: 5%;
+        height: 600px;
+        margin-left: 10vw;
+        width: 90vw;
+    }
+
+    .rodapie__container section {
+        text-align: left;
+        flex-direction: column;
+        width: 25%;
+        gap: 5px;
     }
 }
